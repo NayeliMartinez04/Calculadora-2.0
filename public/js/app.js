@@ -11,22 +11,47 @@ btnResta.onclick = restar;
 btnMultiplicacion.onclick = multiplicar;
 btnDivision.onclick = dividir;
 
+function limpiar() {
+  number1.value = "";
+  number2.value = "";
+}
+
+const validar = function() {
+  if (isNaN(parseInt(number1)) && isNaN(parseInt(number2))) {
+    alert("No es valido");
+    return false;
+  }
+  return true;
+};
+
 function sumar() {
-  const result = parseInt(number1.value) + parseInt(number2.value);
-  textDisplay.innerHTML = result;
+  if (validar()) {
+    const result = parseInt(number1.value) + parseInt(number2.value);
+    textDisplay.innerHTML = result;
+    limpiar();
+  }
 }
 
 function restar() {
-  const result = parseInt(number1.value) - parseInt(number2.value);
-  textDisplay.innerHTML = result;
+  if (validar()) {
+    const result = parseInt(number1.value) - parseInt(number2.value);
+    textDisplay.innerHTML = result;
+    limpiar();
+  }
 }
 
 function multiplicar() {
-  const result = parseInt(number1.value) * parseInt(number2.value);
-  textDisplay.innerHTML = result;
+  if (validar()) {
+    const result = parseInt(number1.value) * parseInt(number2.value);
+    textDisplay.innerHTML = result;
+    limpiar();
+  }
 }
 
 function dividir() {
-  const result = parseInt(number1.value) / parseInt(number2.value);
-  textDisplay.innerHTML = result;
+  if (validar()) {
+    const result = parseInt(number1.value) / parseInt(number2.value);
+    textDisplay.innerHTML = result;
+    limpiar();
+  }
 }

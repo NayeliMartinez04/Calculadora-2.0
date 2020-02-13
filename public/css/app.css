@@ -26,9 +26,9 @@ input {
   height: 40px;
   margin: 10px;
   background-color: white;
-  color: tomato;
+  color: black;
   font-size: 17px;
-  border: 2px solid tomato;
+  border: 2px solid black;
   padding: 0 5px;
 }
 
@@ -38,18 +38,18 @@ input {
 
 .buttons {
   background-color: white;
-  color: tomato;
+  color: black;
   width: 100px;
   height: 40px;
   font-size: 17px;
-  border: 2px solid tomato;
+  border: 2px solid black;
 }
 
 .buttons:hover {
   background-color: black;
-  color: greenyellow;
+  color: gainsboro;
   width: 100px;
   height: 40px;
   font-size: 17px;
-  border: 2px solid greenyellow;
+  border: 2px solid gainsboro;
 }
