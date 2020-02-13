@@ -1,0 +1,55 @@
+body {
+  background-color: mediumpurple;
+}
+
+#titulo {
+  color: mintcream !important ;
+  text-align: center;
+  font-size: 50px;
+}
+
+#result-display {
+  text-align: center;
+}
+#contenedor {
+  width: 50%;
+  margin: auto;
+}
+
+#input-group {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 40%;
+  height: 40px;
+  margin: 10px;
+  background-color: white;
+  color: tomato;
+  font-size: 17px;
+  border: 2px solid tomato;
+  padding: 0 5px;
+}
+
+#buttonGroup {
+  text-align: center;
+}
+
+.buttons {
+  background-color: white;
+  color: tomato;
+  width: 100px;
+  height: 40px;
+  font-size: 17px;
+  border: 2px solid tomato;
+}
+
+.buttons:hover {
+  background-color: black;
+  color: greenyellow;
+  width: 100px;
+  height: 40px;
+  font-size: 17px;
+  border: 2px solid greenyellow;
+}
