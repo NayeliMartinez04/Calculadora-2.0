@@ -17,7 +17,11 @@ function limpiar() {
 }
 
 const validar = function() {
-  if (isNaN(parseInt(number1.value)) && isNaN(parseInt(number2.value))) {
+  debugger;
+  if (
+    (isNaN(parseInt(number1.value)) && isNaN(parseInt(number2.value))) ||
+    number1.value == ""
+  ) {
     alert("No es valido");
     return false;
   }
@@ -50,8 +54,12 @@ function multiplicar() {
 
 function dividir() {
   if (validar()) {
-    const result = parseInt(number1.value) / parseInt(number2.value);
-    textDisplay.innerHTML = result;
-    limpiar();
+    if (number2.value == 0) {
+      alert("No es valido");
+    } else {
+      const result = parseInt(number1.value) / parseInt(number2.value);
+      textDisplay.innerHTML = result;
+      limpiar();
+    }
   }
 }
