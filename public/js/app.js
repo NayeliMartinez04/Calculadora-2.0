@@ -17,7 +17,7 @@ function limpiar() {
 }
 
 const validar = function() {
-  if (isNaN(parseInt(number1)) && isNaN(parseInt(number2))) {
+  if (isNaN(parseInt(number1.value)) && isNaN(parseInt(number2.value))) {
     alert("No es valido");
     return false;
   }
